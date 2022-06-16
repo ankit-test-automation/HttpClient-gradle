@@ -5,3 +5,13 @@ jobs:
 - job: Phase_1
   pool:
    vmImage: macOS-12
+  steps:
+  - task: DownloadPipelineArtifact@0
+  displayName: Download Android APK Latest
+    inputs
+      source:'specific'
+      project:'$(System.TeamProjectId)'
+      pipeline:'3'
+      runVersion:'latestFromBranch'
+      runBranch:'main'
+      itemPattern:'*.apk'
