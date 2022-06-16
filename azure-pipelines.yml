@@ -11,7 +11,7 @@ jobs:
     inputs
       source:'specific'
       project:'$(System.TeamProjectId)'
-      pipeline:'23'
+      pipeline:'ankit-test-automation.testPipeline3'
       runVersion:'latestFromBranch'
       runBranch:'main'
       itemPattern:'*.apk'
