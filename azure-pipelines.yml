@@ -11,7 +11,7 @@ jobs:
     inputs
       source:'specific'
       project:'$(System.TeamProjectId)'
-      pipeline:'3'
+      pipeline:'23'
       runVersion:'latestFromBranch'
       runBranch:'main'
       itemPattern:'*.apk'
