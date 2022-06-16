@@ -6,7 +6,7 @@ jobs:
   pool:
    vmImage: macOS-12
   steps:
-  - task: DownloadPipelineArtifact@0
+  - task: DownloadPipelineArtifact@2
   displayName: Download Android APK Latest
     inputs
       source:'specific'
