@@ -7,9 +7,6 @@ jobs:
    vmImage: macOS-12
   steps:
   - task: DownloadPipelineArtifact@2
-  displayName: Download Android APK Latest
-    inputs
-      source:'specific'
-      project:'$(System.TeamProjectId)'
-      pipeline:3
-      itemPattern:'*.apk'
+    inputs:
+     definition: '*.apk'
+    
