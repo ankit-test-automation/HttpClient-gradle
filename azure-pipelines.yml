@@ -6,7 +6,7 @@ jobs:
   pool:
    vmImage: macOS-12
   steps:
-    - 
+  
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: 'specific'
