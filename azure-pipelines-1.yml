@@ -23,5 +23,5 @@ steps:
     project: '7adb8d59-b247-4088-9032-7c8ceeabc1bf'
     definition: '3'
     buildVersionToDownload: 'latest'
-    itemPattern: 'testingtest'
+    itemPattern: 'drop/n.apk'
     targetPath: '$(Pipeline.Workspace)'
