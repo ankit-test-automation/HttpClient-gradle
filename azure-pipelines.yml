@@ -7,6 +7,4 @@ jobs:
    vmImage: macOS-12
   steps:
   - task: DownloadPipelineArtifact@2
-    inputs:
-     definition: '*.apk'
-    
+    displayName: Download APK
