@@ -8,3 +8,8 @@ jobs:
   steps:
   - task: DownloadPipelineArtifact@2
     displayName: Download APK
+    inputs:
+     definition: 3
+     itemPattern: '*.test'
+     allowFailedBuilds: false
+     project: AnkitTestAutomation
