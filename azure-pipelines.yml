@@ -12,6 +12,4 @@ jobs:
       source:'specific'
       project:'$(System.TeamProjectId)'
       pipeline:3
-      runVersion:'latestFromBranch'
-      runBranch:'main'
       itemPattern:'*.apk'
