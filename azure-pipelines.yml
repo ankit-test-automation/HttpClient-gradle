@@ -6,10 +6,13 @@ jobs:
   pool:
    vmImage: macOS-12
   steps:
-  - task: DownloadPipelineArtifact@2
-    displayName: Download APK
-    inputs:
-     definition: 3
-     itemPattern: dfgdfgdfgsfs
-     allowFailedBuilds: false
-     project: AnkitTestAutomation
+    - 
+- task: DownloadPipelineArtifact@2
+  inputs:
+    buildType: 'specific'
+    project: '7adb8d59-b247-4088-9032-7c8ceeabc1bf'
+    definition: '3'
+    buildVersionToDownload: 'latest'
+    allowPartiallySucceededBuilds: true
+    itemPattern: 'testingtest'
+    targetPath: '$(Pipeline.Workspace)'
